@@ -122,14 +122,14 @@
                   <td valign="middle">
                     <p style="margin:0 0 4px 0; font-size:18px; font-weight:bold; color:#000;">{{ item['title'] }}</p>
 
-                    {% if item['msrp'] > item['price'] %}
+                   Bessemer Black
                     <p style="margin:0; font-size:14px; color:#888; text-decoration:line-through;">
-                      ${{ item['msrp'] | number_format(2, '.', ',') }}
+                      $259.99
                     </p>
                     {% endif %}
 
                     <p style="margin:4px 0 0 0; font-size:18px; font-weight:bold; color:#ed1b24;">
-                      ${{ item['price'] | number_format(2, '.', ',') }}
+                      Regular price$179.99
                     </p>
                   </td>
 
@@ -183,51 +183,88 @@
             </td>
           </tr>
 
-          <!-- Shop by Category -->
-          <tr>
-            <td class="px" style="padding:6px 40px 0 40px">
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                <tr>
-                  <td style="vertical-align:middle"><div style="height:2px; background:#d5d3d0;"></div></td>
-                  <td width="180" align="center" style="font-weight:bold; font-size:18px;">Shop by Category</td>
-                  <td style="vertical-align:middle"><div style="height:2px; background:#d5d3d0;"></div></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+      <!-- ===== Shop by Category (UPDATED) ===== -->
+<tr>
+  <td class="px" style="padding:6px 40px 0 40px">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td style="vertical-align:middle"><div style="height:2px; background:#d5d3d0;"></div></td>
+        <td width="200" align="center" style="font-weight:bold; font-size:20px;">Shop by Category</td>
+        <td style="vertical-align:middle"><div style="height:2px; background:#d5d3d0;"></div></td>
+      </tr>
+    </table>
+  </td>
+</tr>
 
-          <tr>
-            <td class="px" style="padding:18px 40px 0 40px">
-              <table role="presentation" class="cat-grid" cellpadding="0" cellspacing="0" border="0" width="100%">
-                <tr>
-                  <td align="center" width="50%">
-                    <a class="cat-btn" href="https://bessemer.com.au/collections/fryware" target="_blank" style="display:block; background:#000; color:#fff; font-weight:bold; padding:12px 22px; text-decoration:none;">Fryware ></a>
-                  </td>
-                  <td align="center" width="50%">
-                    <a class="cat-btn" href="https://bessemer.com.au/collections/multi-pans" target="_blank" style="display:block; background:#000; color:#fff; font-weight:bold; padding:12px 22px; text-decoration:none;">Multi-Pans ></a>
-                  </td>
-                </tr>
-                <tr><td style="height:12px"></td><td style="height:12px"></td></tr>
-                <tr>
-                  <td align="center">
-                    <a class="cat-btn" href="https://bessemer.com.au/collections/saucepans" target="_blank" style="display:block; background:#000; color:#fff; font-weight:bold; padding:12px 22px; text-decoration:none;">Saucepans ></a>
-                  </td>
-                  <td align="center">
-                    <a class="cat-btn" href="https://bessemer.com.au/collections/casseroles" target="_blank" style="display:block; background:#000; color:#fff; font-weight:bold; padding:12px 22px; text-decoration:none;">Casseroles ></a>
-                  </td>
-                </tr>
-                <tr><td style="height:12px"></td><td style="height:12px"></td></tr>
-                <tr>
-                  <td align="center">
-                    <a class="cat-btn" href="https://bessemer.com.au/collections/roasting" target="_blank" style="display:block; background:#000; color:#fff; font-weight:bold; padding:12px 22px; text-decoration:none;">Roasting ></a>
-                  </td>
-                  <td align="center">
-                    <a class="cat-btn" href="https://bessemer.com.au/collections/lids" target="_blank" style="display:block; background:#000; color:#fff; font-weight:bold; padding:12px 22px; text-decoration:none;">Lids ></a>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+<tr>
+  <td class="px" style="padding:18px 40px 0 40px">
+    <table role="presentation" class="cat-grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <!-- Row 1 -->
+      <tr>
+        <td align="center" width="50%" style="padding-bottom:18px;">
+          <a class="cat-btn" href="https://bessemer.com.au/collections/fryware" target="_blank"
+             style="display:block; background:#000; color:#fff; font-weight:bold; padding:14px 22px; text-decoration:none;">
+            Fryware &gt;
+          </a>
+        </td>
+        <td align="center" width="50%" style="padding-bottom:18px;">
+          <a class="cat-btn" href="https://bessemer.com.au/collections/multi-pans" target="_blank"
+             style="display:block; background:#000; color:#fff; font-weight:bold; padding:14px 22px; text-decoration:none;">
+            Multi-Pans &gt;
+          </a>
+        </td>
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td align="center" style="padding-bottom:18px;">
+          <a class="cat-btn" href="https://bessemer.com.au/collections/saucepans" target="_blank"
+             style="display:block; background:#000; color:#fff; font-weight:bold; padding:14px 22px; text-decoration:none;">
+            Saucepans &gt;
+          </a>
+        </td>
+        <td align="center" style="padding-bottom:18px;">
+          <a class="cat-btn" href="https://bessemer.com.au/collections/casseroles" target="_blank"
+             style="display:block; background:#000; color:#fff; font-weight:bold; padding:14px 22px; text-decoration:none;">
+            Casseroles &gt;
+          </a>
+        </td>
+      </tr>
+      <!-- Row 3 -->
+      <tr>
+        <td align="center" style="padding-bottom:18px;">
+          <a class="cat-btn" href="https://bessemer.com.au/collections/roasting" target="_blank"
+             style="display:block; background:#000; color:#fff; font-weight:bold; padding:14px 22px; text-decoration:none;">
+            Roasting &gt;
+          </a>
+        </td>
+        <td align="center" style="padding-bottom:18px;">
+          <a class="cat-btn" href="https://bessemer.com.au/collections/lids" target="_blank"
+             style="display:block; background:#000; color:#fff; font-weight:bold; padding:14px 22px; text-decoration:none;">
+            Lids &gt;
+          </a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Full-width Shop All -->
+<tr>
+  <td class="px" style="padding:6px 40px 0 40px">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td align="center">
+          <a href="https://bessemer.com.au/collections/all" target="_blank"
+             style="display:block; background:#000; color:#fff; font-weight:bold; padding:14px 22px; text-decoration:none;">
+            Shop All
+          </a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- ===== /Shop by Category ===== -->
+
 
           <!-- After-CTA image trio -->
           <tr><td style="height:22px"></td></tr>
